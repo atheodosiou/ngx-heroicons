@@ -5,7 +5,7 @@ const ICONS_DIR = path.resolve(__dirname, '../projects/ngx-heroicons/src/icons')
 const OUTPUT_FILE = path.resolve(__dirname, '../projects/ngx-heroicons/src/lib/icons.ts');
 const TYPES_FILE = path.resolve(__dirname, '../projects/ngx-heroicons/src/lib/types.ts');
 
-const styles = ['outline', 'solid','mini','micro'];
+const styles = ['outline', 'solid', 'mini', 'micro'];
 
 function sanitizeSvg(svg) {
     return svg
@@ -40,7 +40,7 @@ function generateIconMap() {
 function buildTypeScriptFile(iconMap) {
     const lines = [];
     lines.push(`// 🚨 This file is auto-generated. Do not edit directly.`);
-    lines.push(`export const ICONS: Record<'outline' | 'solid', Record<string, string>> = {`);
+    lines.push(`export const ICONS: Record<'outline' | 'solid' | 'micro' | 'mini', Record<string, string>> = {`);
 
     for (const style of styles) {
         lines.push(`  '${style}': {`);

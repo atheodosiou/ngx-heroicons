@@ -9,7 +9,7 @@ import { IconName } from '../types';
 })
 export class NgxHeroiconsComponent {
   icon = input.required<IconName>();
-  style = input<'outline' | 'solid'>('outline');
+  style = input<'outline' | 'solid' | 'mini' | 'micro'>('outline');
 
   private readonly elRef = inject(ElementRef<HTMLElement>);
   private readonly destroyRef = inject(DestroyRef);
