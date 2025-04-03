@@ -3,12 +3,12 @@ import { ICONS } from '../icons';
 import { IconName } from '../types';
 
 @Component({
-  selector: 'ngx-hero-icon',
+  selector: 'ngx-heroicons',
   template: ``,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NgxHeroiconsComponent {
-  name = input.required<IconName>();
+  icon = input.required<IconName>();
   style = input<'outline' | 'solid'>('outline');
 
   private readonly elRef = inject(ElementRef<HTMLElement>);
@@ -16,7 +16,7 @@ export class NgxHeroiconsComponent {
 
   constructor() {
     effect(() => {
-      const name = this.name();
+      const name = this.icon();
       const style = this.style();
 
       const svgRaw = ICONS[style]?.[name];
