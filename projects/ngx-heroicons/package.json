@@ -1,9 +1,41 @@
 {
   "name": "ngx-heroicons",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "A modern, type-safe, and accessible Heroicons component library for Angular with inline SVGs and Tailwind support.",
+  "author": {
+    "name": "Anastasios Theodosiou",
+    "email": "anastasios.theodosiou@gmail.com",
+    "url": "anastasios.theodosiou.me"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/atheodosiou/ngx-heroicons/tree/master/projects/ngx-heroicons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atheodosiou/ngx-heroicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atheodosiou/ngx-heroicons/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular-icons",
+    "heroicons",
+    "tailwind",
+    "svg-icons",
+    "icons",
+    "components",
+    "angular-library",
+    "ngx"
+  ],
+  "exports": {
+    ".": {
+      "default": "./fesm2022/ngx-heroicons.mjs"
+    }
+  },
+  "types": "./index.d.ts",
   "peerDependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/common": ">=16.0.0",
+    "@angular/core": ">=16.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
