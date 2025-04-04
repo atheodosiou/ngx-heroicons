@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, effect, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, effect, inject, input } from '@angular/core';
 import { ICONS } from '../icons';
 import { IconName } from '../types';
 
@@ -12,7 +12,6 @@ export class NgxHeroiconsComponent {
   style = input<'outline' | 'solid' | 'mini' | 'micro'>('outline');
 
   private readonly elRef = inject(ElementRef<HTMLElement>);
-  private readonly destroyRef = inject(DestroyRef);
 
   constructor() {
     effect(() => {
@@ -27,7 +26,7 @@ export class NgxHeroiconsComponent {
       // Accessibility
       svg.setAttribute('aria-hidden', 'true');
 
-      // ✅ Forward class to SVG
+      // Forward class to SVG
       const host = this.elRef.nativeElement;
       const hostClass = host.className;
       svg.setAttribute('class', hostClass);
