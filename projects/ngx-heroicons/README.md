@@ -54,38 +54,15 @@ export class YourComponent {}
 
 ## 🧠 Inputs
 
-| Input        | Type                                        | Default     | Description                                                  |
-| ------------ | ------------------------------------------- | ----------- | ------------------------------------------------------------ |
-| `icon`       | `IconName`                                  | —           | Icon file name (e.g. `'academic-cap'`, `'x-circle'`)         |
-| `style`      | `'outline' \| 'solid' \| 'mini' \| 'micro'` | `'outline'` | Style/size variant                                           |
-| `class`      | `string`                                    | —           | Applied to the rendered `<svg>` (Tailwind, custom CSS, etc.) |
-
----
-
-💯 You're absolutely right, Tasos — great attention to detail.
-
-You're forwarding the **native `class` attribute** from the host element to the `<svg>` element inside your component, which means:
-
-- ✅ Users **can apply `class="..."`** directly in the template
-- ❌ But it is **not an Angular `@Input()` property** — so it shouldn't be documented as one
-
----
-
-## ✅ Let’s fix the `README.md`
-
-Here’s the corrected **Inputs table** section:
-
-### 📚 Inputs
-
-| Input        | Type                                                | Default      | Description                                                  |
-|--------------|-----------------------------------------------------|--------------|--------------------------------------------------------------|
-| `icon`       | `IconName`                                          | —            | Icon file name (e.g. `'academic-cap'`, `'x-circle'`)         |
-| `style`      | `'outline' \| 'solid' \| 'mini' \| 'micro'`         | `'outline'`  | Icon style and size variant                                  |
-| `aria-label` | `string` (standard native attribute)                | — (hidden)   | Adds screen reader label (overrides `aria-hidden`)           |
+| Input   | Type                                        | Default     | Description                                          |
+| ------- | ------------------------------------------- | ----------- | ---------------------------------------------------- |
+| `icon`  | `IconName`                                  | —           | Icon file name (e.g. `'academic-cap'`, `'x-circle'`) |
+| `style` | `'outline' \| 'solid' \| 'mini' \| 'micro'` | `'outline'` | Style/size variant                                   |
 
 ---
 
 > 💡 You can pass Tailwind or custom styles using the native `class` attribute:
+>
 > ```html
 > <ngx-heroicons [icon]="'x-circle'" class="w-6 h-6 text-red-500" />
 > ```
@@ -143,5 +120,7 @@ This will:
 MIT  
 Icon designs © [Tailwind Labs](https://github.com/tailwindlabs/heroicons)  
 Angular wrapper by [Anastasios Theodosiou](https://anastasios.theodosiou.me)
+
+```
 
 ```
