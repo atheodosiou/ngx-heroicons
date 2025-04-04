@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "ngx-heroicons-ng-add",
+    "title": "NgxHeroicons ng add schema",
+    "type": "object",
+    "properties": {}
+}

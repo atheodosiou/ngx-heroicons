@@ -1,11 +1,12 @@
 {
   "name": "ngx-heroicons",
   "version": "1.0.0",
+  "schematics": "./schematics/collection.json",
   "description": "A modern, type-safe, and accessible Heroicons component library for Angular with inline SVGs and Tailwind support.",
   "author": {
     "name": "Anastasios Theodosiou",
     "email": "anastasios.theodosiou@gmail.com",
-    "url": "anastasios.theodosiou.me"
+    "url": "https://anastasios.theodosiou.me"
   },
   "license": "MIT",
   "homepage": "https://github.com/atheodosiou/ngx-heroicons/tree/master/projects/ngx-heroicons",
