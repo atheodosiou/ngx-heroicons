@@ -1,6 +1,5 @@
 {
   "name": "heroicons-workspace",
-  "version": "0.0.1",
   "scripts": {
     "start:demo": "ng serve ngx-heroicons-demo",
     "generate:icons": "node tools/generate-icon-map.js",
@@ -43,5 +42,6 @@
     "ts-jest": "^29.3.1",
     "ts-node": "^10.9.2",
     "typescript": "~5.7.2"
-  }
+  },
+  "version": "1.0.0"
 }
