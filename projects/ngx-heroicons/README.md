@@ -1,63 +1,121 @@
-# NgxHeroicons
+# 🚀 ngx-heroicons
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+A modern, type-safe, and accessible Angular icon library powered by [Heroicons](https://heroicons.com).
 
-## Code scaffolding
+Supports all official variants:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `outline` (24x24)
+- `solid` (24x24)
+- `mini` (20x20)
+- `micro` (16x16)
 
-```bash
-ng generate component component-name
-```
+Built with Angular 16+ standalone components, signals, and inline SVG rendering — no fetches, no extra asset configuration.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the library, run:
+## 📦 Installation
 
 ```bash
-ng build ngx-heroicons
+npm install ngx-heroicons
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+---
 
-### Publishing the Library
+## 🚀 Quick Usage
 
-Once the project is built, you can publish your library by following these steps:
+### 1. Import the component
 
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/ngx-heroicons
-   ```
+```ts
+import { NgxHeroiconsComponent } from "ngx-heroicons";
 
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
+@Component({
+  standalone: true,
+  imports: [NgxHeroiconsComponent],
+  template: ` <ngx-heroicons [icon]="'academic-cap'" class="w-6 h-6 text-blue-500" /> `,
+})
+export class YourComponent {}
+```
 
-## Running unit tests
+### 2. Choose a style
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+```html
+<ngx-heroicons [icon]="'check-circle'" [style]="'solid'" class="w-6 h-6 text-green-500" />
+<ngx-heroicons [icon]="'check-circle'" [style]="'mini'" class="w-5 h-5 text-green-500" />
+<ngx-heroicons [icon]="'check-circle'" [style]="'micro'" class="w-4 h-4 text-green-500" />
+```
+
+### 3. Optional accessibility label
+
+```html
+<ngx-heroicons [icon]="'x-circle'" class="w-5 h-5 text-red-500" aria-label="Close icon" />
+```
+
+---
+
+## 🧠 Inputs
+
+| Input        | Type                                        | Default     | Description                                                  |
+| ------------ | ------------------------------------------- | ----------- | ------------------------------------------------------------ |
+| `icon`       | `IconName`                                  | —           | Icon file name (e.g. `'academic-cap'`, `'x-circle'`)         |
+| `style`      | `'outline' \| 'solid' \| 'mini' \| 'micro'` | `'outline'` | Style/size variant                                           |
+| `class`      | `string`                                    | —           | Applied to the rendered `<svg>` (Tailwind, custom CSS, etc.) |
+| `aria-label` | `string` (via standard HTML attribute)      | optional    | Adds accessibility label and removes `aria-hidden`           |
+
+---
+
+## ✅ Features
+
+- ✅ Angular 16+ standalone component using signals
+- ✅ Fully inline SVGs (no fetch, no asset config)
+- ✅ Supports all official Heroicons styles (outline, solid, mini, micro)
+- ✅ Forwarded class binding (full Tailwind support)
+- ✅ Accessibility support via `aria-label` and `aria-hidden`
+- ✅ Type-safe `IconName` input with auto-complete
+
+---
+
+## 🔧 Development
+
+### Regenerate the icon map (after adding or updating icons)
 
 ```bash
-ng test
+npm run generate:icons
 ```
 
-## Running end-to-end tests
+This will:
 
-For end-to-end (e2e) testing, run:
+- Inline all SVGs into `icons.ts`
+- Auto-generate a union type `IconName` with all available icon names
 
-```bash
-ng e2e
+---
+
+## 📚 Example Icons
+
+```html
+<!-- Outline (default) -->
+<ngx-heroicons [icon]="'academic-cap'" class="w-6 h-6" />
+
+<!-- Solid -->
+<ngx-heroicons [icon]="'check-circle'" [style]="'solid'" class="w-6 h-6" />
+
+<!-- Mini (20x20) -->
+<ngx-heroicons [icon]="'check-circle'" [style]="'mini'" class="w-5 h-5" />
+
+<!-- Micro (16x16) -->
+<ngx-heroicons [icon]="'check-circle'" [style]="'micro'" class="w-4 h-4" />
+
+<!-- Accessible -->
+<ngx-heroicons [icon]="'x-circle'" class="w-6 h-6 text-red-500" aria-label="Close" />
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 📦 License
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+MIT  
+Icon designs © [Tailwind Labs](https://github.com/tailwindlabs/heroicons)  
+Angular wrapper by [Anastasios Theodosiou]
+
+```
+
+```
