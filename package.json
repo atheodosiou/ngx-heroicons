@@ -1,6 +1,6 @@
 {
   "name": "heroicons-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start:demo": "ng serve ngx-heroicons-demo",
     "generate:icons": "node tools/generate-icon-map.js",
