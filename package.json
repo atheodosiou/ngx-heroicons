@@ -8,10 +8,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
-    "release": "standard-version",
-    "release:patch": "standard-version --release-as patch",
-    "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major",
+    "release": "standard-version --config release.config.js",
+    "release:patch": "standard-version --release-as patch --config release.config.js",
+    "release:minor": "standard-version --release-as minor --config release.config.js",
+    "release:major": "standard-version --release-as major --config release.config.js",
     "release:publish": "npm run release && cd dist/ngx-heroicons && npm publish --access public"
   },
   "private": true,
@@ -43,5 +43,5 @@
     "ts-node": "^10.9.2",
     "typescript": "~5.7.2"
   },
-  "version": "1.2.0"
+  "version": null
 }
