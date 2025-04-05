@@ -3,8 +3,10 @@
   "scripts": {
     "start:demo": "ng serve ngx-heroicons-demo",
     "generate:icons": "node tools/generate-icon-map.js",
+    "build:ngx-heroicons:windows": "ng build ngx-heroicons && npm run copy:schematics:windows",
+    "copy:schematics:windows": "xcopy projects\\ngx-heroicons\\schematics dist\\ngx-heroicons\\schematics /E /I /Y",
     "build:ngx-heroicons": "ng build ngx-heroicons && npm run copy:schematics",
-    "copy:schematics": "xcopy projects\\ngx-heroicons\\schematics dist\\ngx-heroicons\\schematics /E /I /Y",
+    "copy:schematics": "cp -r projects/ngx-heroicons/schematics dist/ngx-heroicons/schematics",
     "prebuild:ngx-heroicons": "npm run generate:icons",
     "test": "jest",
     "test:watch": "jest --watch",
