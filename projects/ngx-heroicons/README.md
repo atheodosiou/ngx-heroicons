@@ -1,6 +1,7 @@
 [![CI – Build & Test](https://github.com/atheodosiou/ngx-heroicons/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/atheodosiou/ngx-heroicons/actions/workflows/ci.yml)
-
-
+[![npm](https://img.shields.io/npm/v/ngx-heroicons.svg)](https://www.npmjs.com/package/ngx-heroicons)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)]()
 # 🚀 ngx-heroicons
 
 A modern, type-safe, and accessible Angular icon library powered by [Heroicons](https://heroicons.com).
