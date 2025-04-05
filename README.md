@@ -4,6 +4,8 @@ This is the monorepo workspace for the **[ngx-heroicons](https://www.npmjs.com/p
 
 ---
 
+![ngx-heroicons image](./ngx-heroicons.png)
+
 ## 📦 Library
 
 📁 [`projects/ngx-heroicons`](./projects/ngx-heroicons/README.md)
