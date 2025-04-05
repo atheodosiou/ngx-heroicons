@@ -79,3 +79,9 @@ npm run release:publish   # Run release + publish to npm
 This workspace uses **GitHub Actions** for automated build and test CI.
 
 > More actions will be added soon for versioning, release notes, auto-publish, and icon sync.
+
+---
+
+MIT  
+Icon designs © [Tailwind Labs](https://github.com/tailwindlabs/heroicons)  
+Angular wrapper by [Anastasios Theodosiou](https://anastasios.theodosiou.me)
