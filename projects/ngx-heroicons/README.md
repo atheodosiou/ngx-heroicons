@@ -1,3 +1,6 @@
+[![CI – Build & Test](https://github.com/atheodosiou/ngx-heroicons/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/atheodosiou/ngx-heroicons/actions/workflows/ci.yml)
+
+
 # 🚀 ngx-heroicons
 
 A modern, type-safe, and accessible Angular icon library powered by [Heroicons](https://heroicons.com).
