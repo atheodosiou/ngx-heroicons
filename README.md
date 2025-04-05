@@ -1,59 +1,81 @@
-# HeroiconsWorkspace
+# 🧰 ngx-heroicons Workspace
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+This is the monorepo workspace for the **[ngx-heroicons](https://www.npmjs.com/package/ngx-heroicons)** Angular library – a modern, type-safe, and zero-runtime HTTP Heroicons SVG solution for Angular with full Tailwind CSS compatibility.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📦 Library
 
-```bash
-ng serve
+📁 [`projects/ngx-heroicons`](./projects/ngx-heroicons/README.md)
+
+A production-ready Angular component for rendering inline SVG Heroicons with:
+
+- Support for `outline`, `solid`, `mini`, and `micro` variants
+- Full TypeScript auto-completion (`IconName` type-safe input)
+- Tailwind CSS compatibility (`class` forwarding)
+- Accessibility (`aria-hidden` included)
+- No runtime HTTP requests – icons are compiled in
+- `ng add` schematic for easy setup
+
+---
+
+## 📁 Projects Structure
+
+```
+projects/
+├── ngx-heroicons/         # Angular Library
+└── ngx-heroicons-demo/    # Demo Angular App
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧪 Available Scripts
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🔧 Development
 
 ```bash
-ng generate --help
+npm run start:demo            # Run demo app (localhost:4200)
+npm run generate:icons        # Generate icon map & types from SVGs
 ```
 
-## Building
-
-To build the project run:
+### 🏗 Build
 
 ```bash
-ng build
+npm run build:ngx-heroicons           # Build the library (Linux/macOS)
+npm run build:ngx-heroicons:windows   # Build the library (Windows)
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+> Note: The library includes schematic files that need to be copied after build. These are handled differently on Windows and POSIX systems.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 🧪 Testing
 
 ```bash
-ng test
+npm run test              # Run Jest tests
+npm run test:watch        # Watch mode
+npm run coverage          # Run tests with coverage
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 🚀 Releases
 
 ```bash
-ng e2e
+npm run release           # Run standard-version (manual prompt)
+npm run release:patch     # Bump patch version
+npm run release:minor     # Bump minor version
+npm run release:major     # Bump major version
+npm run release:publish   # Run release + publish to npm
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 📚 Documentation
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📖 For full documentation and usage examples, see:  
+👉 [`projects/ngx-heroicons/README.md`](./projects/ngx-heroicons/README.md)
+
+---
+
+## ✅ Status
+
+This workspace uses **GitHub Actions** for automated build and test CI.
+
+> More actions will be added soon for versioning, release notes, auto-publish, and icon sync.
