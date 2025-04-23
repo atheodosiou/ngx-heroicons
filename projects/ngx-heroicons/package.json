@@ -1,6 +1,6 @@
 {
   "name": "ngx-heroicons",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "schematics": "./schematics/collection.json",
   "description": "A modern, type-safe, and accessible Heroicons component library for Angular with inline SVGs and Tailwind support.",
   "author": {
