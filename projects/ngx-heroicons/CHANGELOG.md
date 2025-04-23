@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/atheodosiou/ngx-heroicons/compare/v1.1.0...v1.2.0) (2025-04-23)
+
+
+### Features
+
+* Fixes ([3d5ad42](https://github.com/atheodosiou/ngx-heroicons/commit/3d5ad42f13dd02acb38fe14612359a70bbcf4c76))
+
 ## [1.1.0](https://github.com/atheodosiou/ngx-heroicons/compare/v1.0.0...v1.1.0) (2025-04-16)
 
 ## [1.0.0](https://github.com/atheodosiou/ngx-heroicons/compare/v0.0.4...v1.0.0) (2025-04-16)
